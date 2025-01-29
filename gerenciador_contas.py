@@ -3,18 +3,15 @@ import pandas as pd
 from datetime import datetime, timedelta
 import os
 import io
-from dotenv import load_dotenv
 
-# Carregar variáveis de ambiente do arquivo .env
-load_dotenv()
 
 # Configurações gerais
 ARQUIVO_CONTAS = "contas_a_pagar.csv"
 HISTORICO_CONTAS = "historico_contas.xlsx"
 
 # Obter credenciais do arquivo .env
-USUARIO = os.getenv("USUARIO")
-SENHA = os.getenv("SENHA")
+USUARIO = st.secrets("USUARIO")
+SENHA = st.secrets("SENHA")
 
 # Função de autenticação
 def autenticar(usuario, senha):
