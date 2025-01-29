@@ -4,7 +4,6 @@ from datetime import datetime, timedelta
 import os
 import io
 
-
 # Configurações gerais
 ARQUIVO_CONTAS = "contas_a_pagar.csv"
 HISTORICO_CONTAS = "historico_contas.xlsx"
