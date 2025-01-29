@@ -10,8 +10,8 @@ ARQUIVO_CONTAS = "contas_a_pagar.csv"
 HISTORICO_CONTAS = "historico_contas.xlsx"
 
 # Obter credenciais do arquivo .env
-USUARIO = st.secrets("USUARIO")
-SENHA = st.secrets("SENHA")
+USUARIO = st.secrets["USUARIO"]
+SENHA = st.secrets["SENHA"]
 
 # Função de autenticação
 def autenticar(usuario, senha):
